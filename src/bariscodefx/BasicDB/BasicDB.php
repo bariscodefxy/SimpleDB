@@ -17,7 +17,7 @@ class BasicDB extends \PDO {
         }
         
         try{
-            $this->parent::__construct("mysql:host=$host;db=$dbname;charset=$charset", $username, $password);
+            parent::__construct("mysql:host=$host;db=$dbname;charset=$charset", $username, $password);
         }catch(PDOException $e)
         {
             Throw new $e;
