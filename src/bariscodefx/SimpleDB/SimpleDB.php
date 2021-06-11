@@ -26,15 +26,33 @@ class SimpleDB extends \PDO {
     */
     public function get($column = "*", $from, $params = "", $given = [], $type = "")
     {
-        $query = parent::prepare("SELECT $column FROM $params");
+        $query = parent::prepare("SELECT $column FROM $from $params");
         $exec = $query->execute($given);
         if( $exec ) {
             if( !empty( $type ) )
-                return $exec->fetch( $type );
+                return $query->fetch( $type );
             else
-                return $exec->fetch(  );
+                return $query->fetch(  );
         }else
-            throw new \Exception("Failed to get.");
+            throw new \Exception("Failed to get()");
     }
-        
+    
+    /**
+     * getAll function
+     * returns an (array, object or like your parameter type) type value from database table
+     */
+    public function getAll($column = "*", $from, $params = "", $given = [], $type="")
+    {
+        $query = parent::prepare("SELECT $column FROM $from $params");
+        $exec = $query->execute($given);
+        if( $exec )
+        {
+            if( !empty( $type ) )
+                return $query->fetchAll( $type );
+            else
+                return $query->fetchAll(  );
+        }else
+            throw new \Exception("Failed to getAll()");
+    }
+    
 }
