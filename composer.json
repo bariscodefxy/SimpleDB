@@ -9,7 +9,7 @@
         }
     ],
     "type": "library",
-    "license": "APACHE-2.0",
+    "license": "Apache-2.0",
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
