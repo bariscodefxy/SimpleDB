@@ -1,11 +1,11 @@
 <?php
 
-namespace bariscodefx\BasicDB;
+namespace bariscodefx\SimpleDB;
 
 /**
-* Class BasicDB
+* Class SimpleDB
 */
-class BasicDB extends \PDO {
+class SimpleDB extends \PDO {
     
     /**
     * Constructor of Class
