@@ -6,7 +6,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "bariscodefx\\BasicDB\\": "src/bariscodefx/BasicDB"
+            "bariscodefx\\SimpleDB\\": "src/bariscodefx/SimpleDB"
         }
     }
 }
