@@ -1,6 +1,13 @@
 {
     "name": "bariscodefx/basic-db",
     "description": "A easy PDO database liblary for PHP",
+    "authors": [
+        {
+            "name": "bariscodefx",
+            "email": "bariscodefx@mobilpara.net",
+            "role": "Full Stack Developer"
+        }
+    ],
     "type": "library",
     "license": "APACHE-2.0",
     "require-dev": {
