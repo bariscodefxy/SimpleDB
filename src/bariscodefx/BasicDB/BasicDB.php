@@ -20,4 +20,21 @@ class BasicDB extends \PDO {
         }
     }
     
+    /**
+    * get function
+    * returns value from your database
+    */
+    public function get($column = "*", $from, $params = "", $given = [], $type = "")
+    {
+        $query = parent::prepare("SELECT $column FROM $params");
+        $exec = $query->execute($given);
+        if( $exec ) {
+            if( !empty( $type ) )
+                return $exec->fetch( $type );
+            else
+                return $exec->fetch(  );
+        }else
+            Throw new \Exception("Failed to get.");
+    }
+        
 }
