@@ -10,7 +10,7 @@
 
 <body>
     <p>First, if you required library with `composer require bariscodefx/SimpleDB` then you can Connect to database like this:</p>
-    <textarea rows="30" cols="30">
+    <textarea rows="10" cols="45">
 <?php
 
 include_once "vendor/autoload.php";
@@ -24,6 +24,22 @@ $pass = ""; // your mysql password
 $charset = "utf8"; // charset whatever you want default: utf8
 
 $db = new SimpleDB($host, $dbname, $user, $pass, $charset);
+
+?>
+    </textarea>
+    <p>or</p>
+    <textarea rows="10" cols="45">
+<?php
+
+include_once "vendor/autoload.php";
+
+/**
+ * You can use like this:
+ * $db = new \bariscodefx\SimpleDB\SimpleDB("host", "database name", "username", "password", "charset"); // Charset is default utf8!
+ */
+
+
+$db = new \bariscodefx\SimpleDB\SimpleDB("localhost", "mysql", "root", ""); // Simple Code :)
 
 ?>
     </textarea>
