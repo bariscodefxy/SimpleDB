@@ -20,7 +20,7 @@ class BasicDB extends \PDO {
             parent::__construct("mysql:host=$host;dbname=$dbname;charset=$charset", $username, $password);
         }catch(PDOException $e)
         {
-            Throw new $e;
+            echo $e->getMessage() . PHP_EOL;
         }
     }
     
