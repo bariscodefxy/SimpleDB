@@ -3,5 +3,10 @@
     "description": "A easy PDO database liblary for PHP",
     "type": "library",
     "license": "APACHE-2.0",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bariscodefx\\BasicDB\\": "src/bariscodefx/BasicDB"
+        }
+    }
 }
