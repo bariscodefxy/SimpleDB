@@ -6,6 +6,9 @@ A easy PDO database library for PHP
 * PHP-PDO
 * Composer
 
+## Requirements For Testing
+* PHPUnit
+
 ## License
 ### Apache 2.0 License
 Copyright 2021 bariscodefxy
