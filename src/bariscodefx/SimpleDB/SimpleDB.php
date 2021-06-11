@@ -14,7 +14,7 @@ class SimpleDB extends \PDO {
     public function __construct($host, $dbname, $username, $password, $charset = "utf8"){
         try{
             parent::__construct("mysql:host=". $host .";dbname=". $dbname .";charset=". $charset, $username, $password);
-        }catch(PDOException $e)
+        }catch(\PDOException $e)
         {
             echo $e->getMessage() . PHP_EOL;
         }
@@ -34,7 +34,7 @@ class SimpleDB extends \PDO {
             else
                 return $exec->fetch(  );
         }else
-            Throw new \Exception("Failed to get.");
+            throw new \Exception("Failed to get.");
     }
         
 }
