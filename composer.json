@@ -3,7 +3,9 @@
     "description": "A easy PDO database liblary for PHP",
     "type": "library",
     "license": "APACHE-2.0",
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
             "bariscodefx\\SimpleDB\\": "src/bariscodefx/SimpleDB"
