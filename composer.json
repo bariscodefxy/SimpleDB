@@ -1,0 +1,7 @@
+{
+    "name": "bariscodefx/basic-db",
+    "description": "A easy PDO database liblary for PHP",
+    "type": "library",
+    "license": "APACHE-2.0",
+    "require": {}
+}
