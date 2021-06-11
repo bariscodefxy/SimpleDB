@@ -1,6 +1,8 @@
 # BasicDB
-A easy PDO database liblary for PHP
+A easy PDO database library for PHP
 # <img src='https://img.shields.io/discord/812096967714930710?label=discord'> <img src='https://img.shields.io/github/issues/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/forks/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/stars/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/license/bariscodefxy/BasicDB'>        
+
+
 
 ## License
 ### Apache 2.0 License
