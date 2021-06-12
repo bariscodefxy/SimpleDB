@@ -41,9 +41,9 @@ class SimpleDB extends \PDO {
      * getAll function
      * returns an (array, object or like your parameter type) type value from database table
      */
-    public function getAll($table = "*", $from, $params = "", $given = [], $type="")
+    public function getAll($column = "*", $table = "", $params = "", $given = [], $type="")
     {
-        $query = parent::prepare("SELECT $table FROM $from $params");
+        $query = parent::prepare("SELECT $column FROM $table $params");
         $exec = $query->execute($given);
         if( $exec )
         {
