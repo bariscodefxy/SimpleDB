@@ -55,4 +55,19 @@ class SimpleDB extends \PDO {
             throw new \Exception("Failed to getAll()");
     }
     
+    /**
+     * returns true or false
+     * sets a variable
+     */
+    public function set($column = "", $which = "", $where = "", $given = [])
+    {
+        $query = parent::prepare("UPDATE $column FROM SET $which $where");
+        $exec = $query->execute($given);
+        if( $exec )
+        {
+            return true;
+        }else
+            return false;
+    }
+    
 }
