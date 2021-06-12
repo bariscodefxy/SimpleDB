@@ -34,7 +34,7 @@ class SimpleDB extends \PDO {
             else
                 return $query->fetch(  );
         }else
-            throw new \Exception("Failed to get()");
+            return false;
     }
     
     /**
@@ -52,7 +52,7 @@ class SimpleDB extends \PDO {
             else
                 return $query->fetchAll(  );
         }else
-            throw new \Exception("Failed to getAll()");
+            return false;
     }
     
     /**
