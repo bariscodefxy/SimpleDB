@@ -24,9 +24,9 @@ class SimpleDB extends \PDO {
     * get function
     * returns value from your database
     */
-    public function get($column = "*", $from, $params = "", $given = [], $type = "")
+    public function get($table = "*", $from, $params = "", $given = [], $type = "")
     {
-        $query = parent::prepare("SELECT $column FROM $from $params");
+        $query = parent::prepare("SELECT $table FROM $from $params");
         $exec = $query->execute($given);
         if( $exec ) {
             if( !empty( $type ) )
@@ -41,9 +41,9 @@ class SimpleDB extends \PDO {
      * getAll function
      * returns an (array, object or like your parameter type) type value from database table
      */
-    public function getAll($column = "*", $from, $params = "", $given = [], $type="")
+    public function getAll($table = "*", $from, $params = "", $given = [], $type="")
     {
-        $query = parent::prepare("SELECT $column FROM $from $params");
+        $query = parent::prepare("SELECT $table FROM $from $params");
         $exec = $query->execute($given);
         if( $exec )
         {
@@ -59,9 +59,9 @@ class SimpleDB extends \PDO {
      * returns true or false
      * sets a variable
      */
-    public function set($column = "", $which = "", $where = "", $given = [])
+    public function set($table = "", $which = "", $where = "", $given = [])
     {
-        $query = parent::prepare("UPDATE $column FROM SET $which $where");
+        $query = parent::prepare("UPDATE $table FROM SET $which $where");
         $exec = $query->execute($given);
         if( $exec )
         {
@@ -74,9 +74,24 @@ class SimpleDB extends \PDO {
      * returns true or false
      * appends item to a table
      */
-    public function append($column = "", $set = "", $where = "", $given = [])
+    public function append($table = "", $set = "", $where = "", $given = [])
     {
-        $query = parent::prepare("INSERT INTO $column SET $set WHERE $where");
+        $query = parent::prepare("INSERT INTO $table SET $set WHERE $where");
+        $exec = $query->execute($given);
+        if( $exec )
+        {
+            return true;
+        }else 
+            return false;
+    }
+    
+    /**
+     * returns true or false
+     * removes a value from table
+     */
+    public function remove($table = "", $where = "", $given = [])
+    {
+        $query = parent::prepare("DELETE FROM $table WHERE $where");
         $exec = $query->execute($given);
         if( $exec )
         {
