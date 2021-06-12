@@ -61,7 +61,7 @@ class SimpleDB extends \PDO {
      */
     public function set($table = "", $which = "", $where = "", $given = [])
     {
-        $query = parent::prepare("UPDATE $table FROM SET $which WHERE $where");
+        $query = parent::prepare("UPDATE $table SET $which WHERE $where");
         $exec = $query->execute($given);
         if( $exec )
         {
