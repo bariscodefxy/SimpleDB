@@ -70,4 +70,19 @@ class SimpleDB extends \PDO {
             return false;
     }
     
+    /**
+     * returns true or false
+     * appends item to a table
+     */
+    public function append($column = "", $set = "", $where = "", $given = [])
+    {
+        $query = parent::prepare("INSERT INTO $column SET $set WHERE $where");
+        $exec = $query->execute($given);
+        if( $exec )
+        {
+            return true;
+        }else 
+            return false;
+    }
+    
 }
