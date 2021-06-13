@@ -17,5 +17,8 @@
         "psr-4": {
             "bariscodefx\\SimpleDB\\": "src/bariscodefx/SimpleDB"
         }
+    },
+    "scripts": {
+        "test": "php vendor/bin/phpunit"
     }
 }
