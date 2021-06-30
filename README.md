@@ -1,6 +1,6 @@
 # SimpleDB
 A easy PDO database library for PHP
-# <a href="https://discord.gg/HBtf7buzv9"><img src='https://img.shields.io/discord/812096967714930710?label=discord'></a> <img src='https://img.shields.io/github/issues/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/forks/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/stars/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/license/bariscodefxy/BasicDB'>        
+# [![Build Status](https://travis-ci.com/bariscodefxy/SimpleDB.svg?branch=default)](https://travis-ci.com/bariscodefxy/SimpleDB) <a href="https://discord.gg/HBtf7buzv9"><img src='https://img.shields.io/discord/812096967714930710?label=discord'></a> <img src='https://img.shields.io/github/issues/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/forks/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/stars/bariscodefxy/BasicDB'> <img src='https://img.shields.io/github/license/bariscodefxy/BasicDB'>        
 # In Development!
 
 ## Requirements
