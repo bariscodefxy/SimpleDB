@@ -1,5 +1,5 @@
 {
-    "name": "bariscodefx/basic-db",
+    "name": "bariscodefx/simpledb",
     "description": "A easy PDO database liblary for PHP",
     "authors": [
         {
