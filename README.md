@@ -7,6 +7,10 @@ A easy PDO database library for PHP
 * PHP-PDO
 * Composer
 
+## Tested PHP Versions
+* 7.4
+* 7.3
+
 ## Requirements For Testing
 * PHPUnit
 
