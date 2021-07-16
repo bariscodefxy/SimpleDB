@@ -1,6 +1,9 @@
 # SimpleDB
 A easy PDO database library for PHP
-# [![Build Status](https://travis-ci.com/bariscodefxy/SimpleDB.svg?branch=default)](https://travis-ci.com/bariscodefxy/SimpleDB) [![Discord](https://img.shields.io/discord/812096967714930710?label=chat)](https://discord.gg/HBtf7buzv9)
+
+|Build Status|Discord Server|
+|--|--|
+|[![Build Status](https://travis-ci.com/bariscodefxy/SimpleDB.svg?branch=default)](https://travis-ci.com/bariscodefxy/SimpleDB)|[![Discord](https://img.shields.io/discord/812096967714930710?label=chat)](https://discord.gg/HBtf7buzv9)|
 # In Development!
 
 ## Requirements
