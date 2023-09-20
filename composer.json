@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "bariscodefx\\SimpleDB\\": "src/bariscodefx/SimpleDB"
+            "SimpleDB\\": "src"
         }
     },
     "scripts": {
